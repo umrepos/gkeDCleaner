@@ -10,7 +10,7 @@
 # implied. See the License for the specific language governing permissions and limitations under the
 # License.
 
-FROM nginx
+FROM nginx:latest
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
@@ -28,6 +28,6 @@ RUN sed -i 's,REF,'"$GITHUB_REF"',' index.html
 CMD nginx -g 'daemon off;'
 
 
-FROM php:7.2-apache
-COPY /site /var/www/html/
+FROM php:fpm
+COPY site /var/www/html/
 EXPOSE 80
