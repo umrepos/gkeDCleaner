@@ -3,7 +3,7 @@
 $username = 'root';
 $password = '12345678';
 $dbName = 'dcleaner';
-$connectionName = getenv("prueba-de-vpc:us-central1:prueba");
+$connectionName = getenv("prueba-de-vpc:us-central1:prueba1");
 $socketDir = getenv('DB_SOCKET_DIR') ?: '/cloudsql';
 
 // Connect using UNIX sockets
