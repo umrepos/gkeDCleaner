@@ -43,4 +43,4 @@ spec:
             cpu: 100m
         env:
           - name: PORT
-            value: "8080"
+            value: "5000"
