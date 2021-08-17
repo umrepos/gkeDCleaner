@@ -27,8 +27,7 @@ RUN sed -i 's,REF,'"$GITHUB_REF"',' index.html
 
 CMD nginx -g 'daemon off;'
 
-
-FROM php:7.2-fpm
+FROM php:7.0-fpm
 #COPY src/ /code/
 #EXPOSE 80
 
@@ -48,3 +47,5 @@ COPY site/compra.php /var/www/html/
 # RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 # https://hub.docker.com/_/php#configuration
 #RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
+
+CMD /etc/init.d/php7.0-fpm restart && nginx -g "daemon off;"
