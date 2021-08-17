@@ -28,7 +28,7 @@ RUN sed -i 's,REF,'"$GITHUB_REF"',' index.html
 CMD nginx -g 'daemon off;'
 
 
-FROM php:7.1-fpm
+FROM php:fpm
 #COPY src/ /code/
 #EXPOSE 80
 
@@ -37,7 +37,7 @@ FROM php:7.1-fpm
 #FROM php:7.4-apache
 
 # Copy local code to the container image.
-#COPY site/compra.php /var/www/html/
+COPY site/compra.php /var/www/html/
 #COPY site/transacción.php /var/www/html/
 
 # Use port 8080 in Apache configuration files.
