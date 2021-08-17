@@ -28,7 +28,7 @@ RUN sed -i 's,REF,'"$GITHUB_REF"',' index.html
 CMD nginx -g 'daemon off;'
 
 
-FROM php:fpm
+FROM php:7.2-fpm
 #COPY src/ /code/
 #EXPOSE 80
 
