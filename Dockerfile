@@ -48,4 +48,5 @@ COPY site/compra.php /var/www/html/
 # https://hub.docker.com/_/php#configuration
 #RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 
-CMD /etc/init.d/php7.0-fpm restart && nginx -g "daemon off;"
+CMD nginx -g 'daemon off;'
+#CMD /etc/init.d/php7.0-fpm restart && nginx -g "daemon off;"
