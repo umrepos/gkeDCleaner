@@ -41,3 +41,6 @@ spec:
             cpu: 100m
           limits:
             cpu: 100m
+        env:
+          - name: PORT
+            value: "8080"
