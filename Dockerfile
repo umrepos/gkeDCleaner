@@ -13,13 +13,15 @@
 FROM php:8.0-apache
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 WORKDIR /var/www/html
-COPY /site/DBInitializer.php /site/compra.php  /site/index.html /site/transacción.php  /var/www/html/
-COPY /site/css /var/www/html/css
-COPY /site/flexslider /var/www/html/flexslider
-COPY /site/font /var/www/html/font
-COPY /site/images /var/www/html/images
-COPY /site/js /var/www/html/js
-EXPOSE 80
+#COPY /site/DBInitializer.php /site/compra.php  /site/index.html /site/transacción.php  /var/www/html/
+#COPY /site/css /var/www/html/css
+#COPY /site/flexslider /var/www/html/flexslider
+#COPY /site/font /var/www/html/font
+#COPY /site/images /var/www/html/images
+#COPY /site/js /var/www/html/js
+#EXPOSE 80
+COPY /site/ /var/www/html/
+EXPOSE 5000
 
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf &&\
     a2enmod rewrite &&\
