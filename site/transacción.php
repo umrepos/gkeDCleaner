@@ -3,7 +3,7 @@
 $username = 'root';
 $password = '12345678';
 $dbName = 'dcleaner';
-$connectionName = getenv("prueba-de-vpc:us-central1:prueba1");
+$connectionName = getenv("prueba-de-vpc:us-central1:prueba1-clone");
 $socketDir = getenv('DB_SOCKET_DIR') ?: '/cloudsql';
 
     # [START cloud_sql_mysql_pdo_timeout]
