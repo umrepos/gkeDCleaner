@@ -9,7 +9,7 @@ $socketDir = getenv('DB_SOCKET_DIR') ?: '/cloudsql';
     # [START cloud_sql_mysql_pdo_timeout]
     // Here we set the connection timeout to five seconds and ask PDO to
     // throw an exception if any errors occur.
-$connConfig = [
+$conn_config = [
     PDO::ATTR_TIMEOUT => 5,
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 ];
