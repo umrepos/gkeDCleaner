@@ -19,9 +19,8 @@ WORKDIR /var/www/html
 #COPY /site/font /var/www/html/font
 #COPY /site/images /var/www/html/images
 #COPY /site/js /var/www/html/js
-#EXPOSE 80
-COPY /site/ /var/www/html/
-EXPOSE 5000
+COPY site .
+EXPOSE 80
 
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf &&\
     a2enmod rewrite &&\
