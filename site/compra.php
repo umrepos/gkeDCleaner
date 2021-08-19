@@ -64,7 +64,7 @@
       <div class="row">
         <div class="heading text-center">
           <!-- Heading -->
-          <h2>Contáctanos</h2>
+          <h2></h2>
         </div>
       </div>
       <div class="row mrgn30">
