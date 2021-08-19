@@ -74,7 +74,7 @@
               <label for="producto">Producto: <?php echo $_GET["producto"] ?> </label>
             </div>
             <div class="form-group">
-              <label for="email">Cantidad</label>
+              <label for="cantidad">Cantidad</label>
               <input type="int" class="form-control" name="cantidad" id="cantidad" placeholder="Escriba la cantidad" title="Ingrese la cantidad númerica">
             </div>
 	    <div class="form-group">
