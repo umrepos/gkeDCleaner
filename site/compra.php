@@ -41,22 +41,17 @@
       <!--/.navbar-header-->
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="nav navbar-nav" id="mainNav">
-          <li class="active" id="firstLink"><a href="index.php" class="scroll-link">Inicio</a></li>
-          <li><a href="index.php" class="scroll-link">Productos</a></li>
-          <li><a href="index.php" class="scroll-link">Conócenos</a></li>
-          <li><a href="index.php" class="scroll-link">Eventos</a></li>
-          <li><a href="index.php" class="scroll-link">Promociones</a></li>
-          <li><a href="index.php" class="scroll-link">Contacto</a></li>
           <?php
           error_reporting(0);
           $usuario = $_GET['usuario'];
-          if($usuario){
-            echo '<li class="plan-action"><a href=#>'.$usuario.'</a></li>';
-            echo '<li class="plan-action"><a href="index.php">Salir</a></li>';
-          }else{
-            header("Location: http://35.208.29.147/");
-            exit();
-          }
+          echo '<li class="active" id="firstLink"><a href="index.php?usuario='.$usuario.'" class="scroll-link">Inicio</a></li>
+          <li><a href="index.php?usuario='.$usuario.'" class="scroll-link">Productos</a></li>
+          <li><a href="index.php?usuario='.$usuario.'" class="scroll-link">Conócenos</a></li>
+          <li><a href="index.php?usuario='.$usuario.'" class="scroll-link">Eventos</a></li>
+          <li><a href="index.php?usuario='.$usuario.'" class="scroll-link">Promociones</a></li>
+          <li><a href="index.php?usuario='.$usuario.'" class="scroll-link">Contacto</a></li>
+          <li class="plan-action"><a href=#>'.$usuario.'</a></li>
+          <li class="plan-action"><a href="index.php?usuario='.$usuario.'">Salir</a></li>';
           ?>
         </ul>
       </div>

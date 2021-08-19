@@ -93,6 +93,7 @@ echo '<!doctype html>
 <!-- Font Awesome -->
 <link href="font/css/font-awesome.min.css" rel="stylesheet">
 </head>
+
 <body>
 <header class="header">
   <div class="container">
@@ -103,14 +104,14 @@ echo '<!doctype html>
       <!--/.navbar-header-->
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="nav navbar-nav" id="mainNav">
-          <li class="active" id="firstLink"><a href="index.php" class="scroll-link">Inicio</a></li>
-          <li><a href="index.php" class="scroll-link">Productos</a></li>
-          <li><a href="index.php" class="scroll-link">Conócenos</a></li>
-          <li><a href="index.php" class="scroll-link">Eventos</a></li>
-          <li><a href="index.php" class="scroll-link">Promociones</a></li>
-          <li><a href="index.php" class="scroll-link">Contacto</a></li>
-          <li class="plan-action"><a href=#>'.$usuario.'</a></li>
-          <li class="plan-action"><a href="index.php">Salir</a></li>
+        <li class="active" id="firstLink"><a href="index.php?usuario='.$usuario.'" class="scroll-link">Inicio</a></li>
+        <li><a href="index.php?usuario='.$usuario.'" class="scroll-link">Productos</a></li>
+        <li><a href="index.php?usuario='.$usuario.'" class="scroll-link">Conócenos</a></li>
+        <li><a href="index.php?usuario='.$usuario.'" class="scroll-link">Eventos</a></li>
+        <li><a href="index.php?usuario='.$usuario.'" class="scroll-link">Promociones</a></li>
+        <li><a href="index.php?usuario='.$usuario.'" class="scroll-link">Contacto</a></li>
+        <li class="plan-action"><a href=#>'.$usuario.'</a></li>
+        <li class="plan-action"><a href="index.php?usuario='.$usuario.'">Salir</a></li>
         </ul>
       </div>
       <!--/.navbar-collapse-->
@@ -121,6 +122,7 @@ echo '<!doctype html>
 </header>
 <!--/.header-->
 <div id="#top"></div>
+
 <section id="contactUs" class="contact-parlex">
   <div class="parlex-back">
     <div class="container">
@@ -143,11 +145,13 @@ echo '<!doctype html>
           echo '<option value="'.$row['nombre'].'">'.$row['nombre'].'</option>';
         }
 	      echo '</select>
+
             </div>
             <div class="form-group">
               <label for="cantidad">Cantidad</label>
               <input type="int" class="form-control" name="cantidad" id="cantidad" placeholder="Escriba la cantidad" maxlength="7" title="Ingrese la cantidad númerica" required>
             </div>
+
             <div class="form-group">
                 <label for="pago">Elija la opción de pago:</label>
                 <select id="pago" name="pago">
