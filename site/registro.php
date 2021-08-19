@@ -75,23 +75,23 @@
             <div><h2>Registro DCleaner</h2></div>
 	    <div class="form-group">
               <label for="cliente">Nombre</label>
-              <input type="text" class="form-control" name="cliente" placeholder="Nombre del cliente" title="Escriba su nombre" required>
+              <input type="text" class="form-control" name="cliente" placeholder="Nombre del cliente" maxlength="100" title="Escriba su nombre" required>
             </div>
 	    <div class="form-group">
               <label for="correo">Correo</label>
-              <input type="text" class="form-control" name="correo" placeholder="Correo electrónico" title="Ingrese su correo electrónico" required>
+              <input type="text" class="form-control" name="correo" placeholder="Correo electrónico" maxlength="100" title="Ingrese su correo electrónico" required>
             </div>
 	    <div class="form-group">
               <label for="contraseña">Contraseña</label>
-              <input type="password" class="form-control" name="contrasena" placeholder="Contraseña" title="Escriba una contraseña" required>
+              <input type="password" class="form-control" name="contrasena" placeholder="Contraseña" minlength="8" maxlength="30" title="Escriba una contraseña" required>
             </div>
 	    <div class="form-group">
               <label for="direccion">Dirección</label>
-              <input type="text" class="form-control" name="direccion" placeholder="Domicilio" title="Ingrese su dirección" required>
+              <input type="text" class="form-control" name="direccion" placeholder="Domicilio" maxlength="100" title="Ingrese su dirección" required>
             </div>
 	    <div class="form-group">
               <label for="zipcode">Código Postal</label>
-              <input type="text" class="form-control" name="zipcode" placeholder="Código Postal" title="Ingrese su código postal" required>
+              <input type="text" class="form-control" name="zipcode" placeholder="Código Postal" maxlength="5" title="Ingrese su código postal" required>
             </div>
 	    <div class="form-group">
                 <label for="ciudad">Elija la ciudad:</label>
