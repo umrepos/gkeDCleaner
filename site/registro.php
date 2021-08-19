@@ -91,7 +91,7 @@
             </div>
 	    <div class="form-group">
               <label for="zipcode">Código Postal</label>
-              <input type="text" class="form-control" name="zipcode" placeholder="Código Postal" maxlength="5" title="Ingrese su código postal" required>
+              <input type="number" class="form-control" name="zipcode" placeholder="Código Postal" maxlength="5" title="Ingrese su código postal" required>
             </div>
 	    <div class="form-group">
                 <label for="ciudad">Elija la ciudad:</label>
