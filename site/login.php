@@ -83,6 +83,7 @@
             </div>
             <div class="result"></div>
           </div>
+        </form>
       </div>
       <div class="row mrgn30">
         <form method="post" action="registro.php" id="registro" role="form">
@@ -95,6 +96,7 @@
             </div>
             <div class="result"></div>
           </div>
+        </form>
       </div>
     </div> <!--/.container-->
   </div>
