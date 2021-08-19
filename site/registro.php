@@ -41,12 +41,12 @@
       <!--/.navbar-header-->
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="nav navbar-nav" id="mainNav">
-          <li class="active" id="firstLink"><a href="index.html" class="scroll-link">Inicio</a></li>
-          <li><a href="index.html" class="scroll-link">Productos</a></li>
-          <li><a href="index.html" class="scroll-link">Conócenos</a></li>
-          <li><a href="index.html" class="scroll-link">Eventos</a></li>
-          <li><a href="index.html" class="scroll-link">Promociones</a></li>
-          <li><a href="index.html" class="scroll-link">Contacto</a></li>         
+          <li class="active" id="firstLink"><a href="index.php" class="scroll-link">Inicio</a></li>
+          <li><a href="index.php" class="scroll-link">Productos</a></li>
+          <li><a href="index.php" class="scroll-link">Conócenos</a></li>
+          <li><a href="index.php" class="scroll-link">Eventos</a></li>
+          <li><a href="index.php" class="scroll-link">Promociones</a></li>
+          <li><a href="index.php" class="scroll-link">Contacto</a></li>         
 	  
 
         </ul>
