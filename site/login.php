@@ -58,63 +58,45 @@
 <!--/.header-->
 <div id="#top"></div>
 
-<section id="contactUs" class="contact-parlex">
+<section id="login" class="contact-parlex">
   <div class="parlex-back">
     <div class="container">
       <div class="row">
         <div class="heading text-center">
           <!-- Heading -->
-          <h2>Contáctanos</h2>
+          <h2>Iniciar sesión</h2>
         </div>
       </div>
       <div class="row mrgn30">
         <form method="post" action="transacción.php" id="contactfrm" role="form">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="producto">Producto: <?php echo $_GET["producto"] ?> </label>
-            </div>
-            <div class="form-group">
-              <label for="email">Cantidad</label>
-              <input type="int" class="form-control" name="cantidad" id="cantidad" placeholder="Escriba la cantidad" title="Ingrese la cantidad númerica">
-            </div>
-	    <div class="form-group">
-              <label for="cliente">Nombre</label>
-              <input type="text" class="form-control" name="cliente" placeholder="Nombre del cliente" title="Ingrese el nombre del cliente">
-            </div>
-	    <div class="form-group">
-              <label for="correo">Correo</label>
+	      <label for="correo">Correo</label>
               <input type="text" class="form-control" name="correo" placeholder="Correo electrónico" title="Ingrese su correo electrónico">
             </div>
 	    <div class="form-group">
-              <label for="direccion">Dirección</label>
-              <input type="text" class="form-control" name="direccion" placeholder="Domicilio" title="Ingrese su dirección">
-            </div>
-	    <div class="form-group">
-              <label for="zipcode">Código Postal</label>
-              <input type="text" class="form-control" name="zipcode" placeholder="Código Postal" title="Ingrese su código postal">
-            </div>
-	    <div class="form-group">
-                <label for="ciudad">Elija la ciudad:</label>
-                <select id="ciudad" name="ciudad">
-                  <option value="Huasco">Huasco</option>
-                  <option value="Mérida">Mérida</option>
-                  <option value="Zapopan">Zapopan</option>
-                </select>
+	      <label for="contrasena">Contraseña</label>
+              <input type="text" class="form-control" name="contrasena" placeholder="Contraseña" title="Ingrese su contraseña">
             </div>
             <div class="form-group">
-                <label for="pago">Elija la opción de pago:</label>
-                <select id="pago" name="pago">
-                  <option value="transferencia">Transferencia</option>
-                  <option value="Paypal">Paypal</option>
-                  <option value="Skrill">Skril</option>
-                </select>
-            </div>
-            <div class="form-group">
-              <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Realizar pedido</button>
+              <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Ingresar</button>
             </div>
             <div class="result"></div>
           </div>
       </div>
+      <div class="row mrgn30">
+        <form method="post" action="registro.php" id="registro" role="form">
+          <div class="col-sm-12">
+            <div class="container hero-text2">
+  		<h3> Aún no es cliente? </h3>
+  	    </div>
+            <div class="form-group">
+              <button name="registrar" type="submit" class="btn btn-lg btn-primary" id="registrar">Registrar</button>
+            </div>
+            <div class="result"></div>
+          </div>
+      </div>
+    </div>
     </div>
     <!--/.container-->
   </div>
