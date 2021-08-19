@@ -13,12 +13,6 @@
 FROM php:8.0-apache
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 WORKDIR /var/www/html
-#COPY /site/DBInitializer.php /site/compra.php  /site/index.html /site/transacción.php  /var/www/html/
-#COPY /site/css /var/www/html/css
-#COPY /site/flexslider /var/www/html/flexslider
-#COPY /site/font /var/www/html/font
-#COPY /site/images /var/www/html/images
-#COPY /site/js /var/www/html/js
 COPY site .
 EXPOSE 80
 
@@ -26,43 +20,3 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf &&\
     a2enmod rewrite &&\
     a2dissite 000-default &&\
     service apache2 restart
-
-#FROM nginx:latest
-
-#COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-#WORKDIR /usr/share/nginx/html
-#COPY site .
-
-#ARG GITHUB_SHA
-#ARG GITHUB_REF
-#ENV SHA=$GITHUB_SHA
-#ENV REF=$GITHUB_REF
-
-#RUN sed -i 's,SHA,'"$GITHUB_SHA"',' index.html
-#RUN sed -i 's,REF,'"$GITHUB_REF"',' index.html
-
-#CMD nginx -g 'daemon off;'
-
-#FROM php:7.0-fpm
-#COPY src/ /code/
-#EXPOSE 80
-
-# Use the official PHP 7.4 image.
-# https://hub.docker.com/_/php
-#FROM php:7.4-apache
-
-# Copy local code to the container image.
-#COPY site/compra.php /var/www/html/
-#COPY site/transacción.php /var/www/html/
-
-# Use port 8080 in Apache configuration files.
-#RUN sed -i 's/80/${PORT}/g' /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
-
-# Configure PHP for development.
-# Switch to the production php.ini for production operations.
-# RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
-# https://hub.docker.com/_/php#configuration
-#RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
-
-#CMD /etc/init.d/php7.0-fpm restart && nginx -g "daemon off;"
