@@ -46,7 +46,7 @@
           <li><a href="index.php" class="scroll-link">Conócenos</a></li>
           <li><a href="index.php" class="scroll-link">Eventos</a></li>
           <li><a href="index.php" class="scroll-link">Promociones</a></li>
-          <li><a href="index.php" class="scroll-link">Contacto</a></li>          
+          <li><a href="index.php" class="scroll-link">Contacto</a></li>
         </ul>
       </div>
       <!--/.navbar-collapse-->
@@ -82,11 +82,10 @@
             <div class="form-group">
               <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Ingresar</button>
             </div>
-            <div class="result"></div>  
+            <div class="result"></div>
           </div>
         </form>
       </div>
-	    
       <div class="row mrgn30">
         <form method="post" action="registro.php" id="registro" role="form">
           <div class="col-sm-12">
@@ -100,12 +99,10 @@
 	  </div>
         </form>
       </div>
-	    
-    </div> 
+    </div>
     <!--/.container-->
   </div>
 </section>
-	
 <footer>
 <div class="container">
         <div class="row">
@@ -120,7 +117,6 @@
                     </ul>
                  </div>
             </div>
-
             <div class="col-md-3">
             	<div class="col">
                     <h4>Suscripción</h4>
@@ -135,7 +131,6 @@
                     </form>
                 </div>
             </div>
-
             <div class="col-md-3">
             	<div class="col col-social-icons">
                     <h4>Síguenos</h4>
@@ -149,7 +144,6 @@
                     <a href="#"><i class="fa fa-pinterest"></i></a>
                 </div>
             </div>
-
              <div class="col-md-3">
              	<div class="col">
                     <h4>Noticias</h4>
@@ -161,9 +155,7 @@
                 </div>
             </div>
         </div>
-
     </div>
-
 </footer>
 <!--/.page-section-->
 <section class="copyright">
@@ -175,7 +167,6 @@
   </div>
 </section>
 <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
-
 <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
 <script src="js/modernizr-latest.js"></script>
 <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
