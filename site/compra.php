@@ -85,60 +85,7 @@
               <label for="cantidad">Cantidad</label>
               <input type="int" class="form-control" name="cantidad" id="cantidad" placeholder="Escriba la cantidad" maxlength="7" title="Ingrese la cantidad númerica" required>
             </div>
-	    <div class="form-group">
-              <label for="cliente">Nombre</label>
-              <input type="text" class="form-control" name="cliente" placeholder="Nombre del cliente" maxlength="100" title="Ingrese el nombre del cliente" required>
-            </div>
-	    <div class="form-group">
-              <label for="correo">Correo</label>
-              <input type="text" class="form-control" name="correo" placeholder="Correo electrónico" maxlength="100" title="Ingrese su correo electrónico" required>
-            </div>
-	    <div class="form-group">
-              <label for="direccion">Dirección</label>
-              <input type="text" class="form-control" name="direccion" placeholder="Domicilio" maxlength="105" title="Ingrese su dirección" required>
-            </div>
-	    <div class="form-group">
-              <label for="zipcode">Código Postal</label>
-              <input type="text" class="form-control" name="zipcode" placeholder="Código Postal" maxlength="5" title="Ingrese su código postal" required>
-            </div>
-	    <div class="form-group">
-                <label for="ciudad">Elija la ciudad:</label>
-                <select id="ciudad" name="ciudad">
-		  <option value="no">Seleccione una...</option>
-                  <option value="Aguascalientes">Aguascalientes</option>
-      <option value="Baja California">Baja California</option>
-      <option value="Baja California Sur">Baja California Sur</option>
-      <option value="Campeche">Campeche</option>
-      <option value="Chiapas">Chiapas</option>
-      <option value="Chihuahua">Chihuahua</option>
-      <option value="CDMX">Ciudad de México</option>
-      <option value="Coahuila">Coahuila</option>
-      <option value="Colima">Colima</option>
-      <option value="Durango">Durango</option>
-      <option value="Estado de México">Estado de México</option>
-      <option value="Guanajuato">Guanajuato</option>
-      <option value="Guerrero">Guerrero</option>
-      <option value="Hidalgo">Hidalgo</option>
-      <option value="Jalisco">Jalisco</option>
-      <option value="Michoacán">Michoacán</option>
-      <option value="Morelos">Morelos</option>
-      <option value="Nayarit">Nayarit</option>
-      <option value="Nuevo León">Nuevo León</option>
-      <option value="Oaxaca">Oaxaca</option>
-      <option value="Puebla">Puebla</option>
-      <option value="Querétaro">Querétaro</option>
-      <option value="Quintana Roo">Quintana Roo</option>
-      <option value="San Luis Potosí">San Luis Potosí</option>
-      <option value="Sinaloa">Sinaloa</option>
-      <option value="Sonora">Sonora</option>
-      <option value="Tabasco">Tabasco</option>
-      <option value="Tamaulipas">Tamaulipas</option>
-      <option value="Tlaxcala">Tlaxcala</option>
-      <option value="Veracruz">Veracruz</option>
-      <option value="Yucatán">Yucatán</option>
-      <option value="Zacatecas">Zacatecas</option>
-                </select>
-            </div>
+	    
             <div class="form-group">
                 <label for="pago">Elija la opción de pago:</label>
                 <select id="pago" name="pago">
