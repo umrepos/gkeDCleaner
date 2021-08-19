@@ -95,11 +95,11 @@
               <button name="registrar" type="submit" class="btn btn-lg btn-primary" id="registrar">Registrar</button>
             </div>
             <div class="result"></div>
-            </div>
 	  </div>
         </form>
       </div>
-    </div> <!--/.container-->
+    </div> 
+    <!--/.container-->
   </div>
 </section>
 	
