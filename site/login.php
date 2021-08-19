@@ -70,6 +70,7 @@
       <div class="row mrgn30">
         <form method="post" action="transacción.php" id="contactfrm" role="form">
           <div class="col-sm-12">
+            <div><h2>Inicio de sesión</h2></div>
             <div class="form-group">
 	      <label for="correo">Correo</label>
               <input type="text" class="form-control" name="correo" placeholder="Correo electrónico" title="Ingrese su correo electrónico">
@@ -81,23 +82,25 @@
             <div class="form-group">
               <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Ingresar</button>
             </div>
-            <div class="result"></div>
+            <div class="result"></div>  
           </div>
         </form>
       </div>
+	    
       <div class="row mrgn30">
         <form method="post" action="registro.php" id="registro" role="form">
           <div class="col-sm-12">
             <div class="container hero-text2">
-  		<h3> Aún no es cliente? </h3>
+  		<h3> ¿Aún no es cliente? </h3>
   	    </div>
             <div class="form-group">
-              <button name="registrar" type="submit" class="btn btn-lg btn-primary" id="registrar">Registrar</button>
+              <button name="registrar" style="display: block; margin: 0 auto;" type="submit" class="btn btn-lg btn-primary" id="registrar">Registrar</button>
             </div>
             <div class="result"></div>
 	  </div>
         </form>
       </div>
+	    
     </div> 
     <!--/.container-->
   </div>
