@@ -82,7 +82,7 @@
               <input type="text" class="form-control" name="correo" placeholder="Correo electrónico" title="Ingrese su correo electrónico" required>
             </div>
 	    <div class="form-group">
-              <label for="contraseña">Contrseña</label>
+              <label for="contraseña">Contraseña</label>
               <input type="password" class="form-control" name="contrasena" placeholder="Contraseña" title="Escriba una contraseña" required>
             </div>
 	    <div class="form-group">
