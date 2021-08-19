@@ -73,11 +73,11 @@
             <div><h2>Inicio de sesión</h2></div>
             <div class="form-group">
 	      <label for="correo">Correo</label>
-              <input type="text" class="form-control" name="correo" placeholder="Correo electrónico" title="Ingrese su correo electrónico">
+              <input type="text" class="form-control" name="correo" placeholder="Correo electrónico" title="Ingrese su correo electrónico" required>
             </div>
 	    <div class="form-group">
 	      <label for="contrasena">Contraseña</label>
-              <input type="text" class="form-control" name="contrasena" placeholder="Contraseña" title="Ingrese su contraseña">
+              <input type="password" class="form-control" name="contrasena" placeholder="Contraseña" title="Ingrese su contraseña" required>
             </div>
             <div class="form-group">
               <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Ingresar</button>
