@@ -70,12 +70,12 @@
         </div>
       </div>
       <div class="row mrgn30">
-        <form method="post" action="index.html" id="contactfrm" role="form">
+        <form method="post" action="realizar_registro.php" id="contactfrm" role="form">
           <div class="col-sm-12">         
             <div><h2>Registro DCleaner</h2></div>
 	    <div class="form-group">
               <label for="cliente">Nombre</label>
-              <input type="text" class="form-control" name="cliente" placeholder="Nombre del cliente" maxlength="100" title="Escriba su nombre" required>
+              <input type="text" class="form-control" name="nombre" placeholder="Nombre del cliente" maxlength="100" title="Escriba su nombre" required>
             </div>
 	    <div class="form-group">
               <label for="correo">Correo</label>
@@ -83,7 +83,7 @@
             </div>
 	    <div class="form-group">
               <label for="contraseña">Contraseña</label>
-              <input type="password" class="form-control" name="contrasena" placeholder="Contraseña" minlength="8" maxlength="30" title="Escriba una contraseña" required>
+              <input type="password" class="form-control" name="contraseña" placeholder="Contraseña" minlength="8" maxlength="30" title="Escriba una contraseña" required>
             </div>
 	    <div class="form-group">
               <label for="direccion">Dirección</label>
