@@ -96,9 +96,7 @@
             <div class="result"></div>
           </div>
       </div>
-    </div>
-    </div>
-    <!--/.container-->
+    </div> <!--/.container-->
   </div>
 </section>
 <footer>
