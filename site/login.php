@@ -68,7 +68,7 @@
         </div>
       </div>
       <div class="row mrgn30">
-        <form method="post" action="index.html" id="contactfrm" role="form">
+        <form method="post" action="login_check.php" id="contactfrm" role="form">
           <div class="col-sm-12">
             <div><h2>Inicio de sesión</h2></div>
             <div class="form-group">
