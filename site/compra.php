@@ -46,7 +46,18 @@
           <li><a href="index.php" class="scroll-link">Conócenos</a></li>
           <li><a href="index.php" class="scroll-link">Eventos</a></li>
           <li><a href="index.php" class="scroll-link">Promociones</a></li>
-          <li><a href="index.php" class="scroll-link">Contacto</a></li>          
+          <li><a href="index.php" class="scroll-link">Contacto</a></li>
+          <?php
+          error_reporting(0);
+          $usuario = $_GET['usuario'];
+          if($usuario){
+            echo '<li class="plan-action"><a href=#>'.$usuario.'</a></li>';
+            echo '<li class="plan-action"><a href="index.php">Salir</a></li>';
+          }else{
+            header("Location: http://35.208.29.147/");
+            exit();
+          }
+          ?>
         </ul>
       </div>
       <!--/.navbar-collapse-->
@@ -68,24 +79,47 @@
         </div>
       </div>
       <div class="row mrgn30">
-        <form method="post" action="transacción.php" id="contactfrm" role="form">
+        <?php echo '<form method="post" action="transacción.php?usuario='.$usuario.'" id="contactfrm" role="form">'?>
           <div class="col-sm-12">
             <div class="form-group">
               <label for="producto">Elija un producto </label>
-	      <select id="producto" name="producto">		    
-                    <option value="Mascarilla KN95">Mascarilla KN95</option>
-		    <option value="Gel Antibacterial Escudo Sobre">Gel Antibacterial Escudo Sobre</option>
-		    <option value="Spray Desinfectante">Spray Desinfectante</option>
-		    <option value="Best Trading Cubrebocas">Best Trading Cubrebocas</option>
-		    <option value="Careta Protectora PVC">Careta Protectora PVC</option>		    
+	      <select id="producto" name="producto">
+        <?php
+        // Config conection
+        $username = 'root';
+        $password = '12345678';
+        $dbName = 'dcleaner';
+        $dbHost = '35.238.96.185';
+
+
+        // Connect to the database.
+        $connConfig = [
+           PDO::ATTR_TIMEOUT => 5,
+           PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+          ];
+        $dsn = sprintf('mysql:dbname=%s;host=%s', $dbName, $dbHost);
+        // Connect to the database
+        try {
+          $conn = new PDO($dsn, $username, $password, $connConfig);
+          if ($conn) {
+          }
+        } catch (PDOException $e) {
+        	echo $e->getMessage();
+        }
+
+        $statement = $conn->query("SELECT * FROM productos");
+        while ($row = $statement->fetch()) {
+          echo '<option value="'.$row['nombre'].'">'.$row['nombre'].'</option>';
+        }
+        ?>
 	      </select>
-		    
+
             </div>
             <div class="form-group">
               <label for="cantidad">Cantidad</label>
               <input type="int" class="form-control" name="cantidad" id="cantidad" placeholder="Escriba la cantidad" maxlength="7" title="Ingrese la cantidad númerica" required>
             </div>
-	    
+
             <div class="form-group">
                 <label for="pago">Elija la opción de pago:</label>
                 <select id="pago" name="pago">
@@ -118,7 +152,6 @@
                     </ul>
                  </div>
             </div>
-
             <div class="col-md-3">
             	<div class="col">
                     <h4>Suscripción</h4>
@@ -133,7 +166,6 @@
                     </form>
                 </div>
             </div>
-
             <div class="col-md-3">
             	<div class="col col-social-icons">
                     <h4>Síguenos</h4>
@@ -147,7 +179,6 @@
                     <a href="#"><i class="fa fa-pinterest"></i></a>
                 </div>
             </div>
-
              <div class="col-md-3">
              	<div class="col">
                     <h4>Noticias</h4>
@@ -159,9 +190,7 @@
                 </div>
             </div>
         </div>
-
     </div>
-
 </footer>
 <!--/.page-section-->
 <section class="copyright">
@@ -173,7 +202,6 @@
   </div>
 </section>
 <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
-
 <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
 <script src="js/modernizr-latest.js"></script>
 <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
